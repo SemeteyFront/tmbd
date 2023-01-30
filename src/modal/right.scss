@@ -1,0 +1,42 @@
+.modalRigth {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modalRigth.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalRigth__content {
+  padding: 20px;
+  background: linear-gradient(.25turn, rgb(255, 0, 0), 10%, rgb(68, 166, 196));
+  width: 15vw;
+  height: 100vh;
+  transform: scale3d(2.5, 1.2, 0.3);
+  transition: 0.4s all;
+}
+
+.modalRigth__content.active {
+  transform: scale(1);
+}
+
+
+.header__modal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  overflow-y: scroll;
+  color: rgb(255, 255, 255);
+
+  p {
+    margin: 0;
+  }
+}
